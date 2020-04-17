@@ -1,10 +1,10 @@
 package com.norha.spring;
 
-import java.util.List;
+import java.util.Set;
 
 public class BikeInsurance implements Insurance {
 	
-	public BikeInsurance(List<String> members) {
+	public BikeInsurance(Set<String> members) {
 		System.out.println("LIST OF MEMBERS");
 		for (String member : members) {
 			System.out.println(member);
