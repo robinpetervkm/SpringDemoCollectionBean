@@ -5,12 +5,12 @@
 
 	<bean id="myInsurance" class="com.norha.spring.BikeInsurance">
 		<constructor-arg>
-			<list>
+			<set>
 				<value>John</value>
 				<value>Jose</value>
 				<value>Robin</value>
 				<value>Robin</value>
-			</list>
+			</set>
 		</constructor-arg>
 	</bean>
 
