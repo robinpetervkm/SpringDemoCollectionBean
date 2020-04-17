@@ -1,19 +1,26 @@
 package com.norha.spring;
 
-import java.util.Set;
+import java.util.Map;
 
 public class BikeInsurance implements Insurance {
+	private Map<String,String> members;
 	
-	public BikeInsurance(Set<String> members) {
-		System.out.println("LIST OF MEMBERS");
-		for (String member : members) {
-			System.out.println(member);
-		}
+	public Map<String, String> getMembers() {
+		return members;
+	}
+
+	public void setMembers(Map<String, String> members) {
+		this.members = members;
 	}
 
 	@Override
 	public String showStatus() {
 		return "Your Bike is Insured";
+	}
+
+	@Override
+	public String toString() {
+		return "BikeInsurance [members=" + members + "]";
 	}
 
 }
