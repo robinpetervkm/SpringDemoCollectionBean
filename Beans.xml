@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
-	>
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="myInsurance" class="com.norha.spring.BikeInsurance" autowire="constructor">
-		
+	<bean id="myInsurance" class="com.norha.spring.BikeInsurance" autowire="byName">
 	</bean>
 
-	<!-- <bean id="off1" class="com.norha.spring.Offers" primary="true"></bean>   -->
-	<bean id="off1" class="com.norha.spring.Offers"></bean>
-	<bean id="off2" class="com.norha.spring.Offers" autowire-candidate="false"></bean>
-	
+	<bean id="off1" name="currentOffer" class="com.norha.spring.Offers">
+		<property name="offer" value="_offer__Value_From__Bean"></property>
+	</bean>
+
+	<bean id="cond1" name="currentCondition" class="com.norha.spring.Conditions">
+		<property name="condition" value="_condition__Value_From__Bean"></property>
+	</bean>
+
 </beans> 

@@ -2,9 +2,23 @@ package com.norha.spring;
 
 
 public class BikeInsurance implements Insurance {
+	private Conditions currentCondition;
+	private Offers currentOffer;
 	
-	public BikeInsurance(Offers o) {
-		System.out.println(o.getOffer());
+	public Conditions getCurrentCondition() {
+		return currentCondition;
+	}
+
+	public void setCurrentCondition(Conditions c) {
+		this.currentCondition = c;
+	}
+
+	public Offers getCurrentOffer() {
+		return currentOffer;
+	}
+
+	public void setCurrentOffer(Offers o) {
+		this.currentOffer = o;
 	}
 
 	@Override

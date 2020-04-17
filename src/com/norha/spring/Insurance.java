@@ -1,6 +1,5 @@
 package com.norha.spring;
 
-import java.util.Map;
 
 public interface Insurance {
 	
