@@ -3,15 +3,15 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="myInsurance" class="com.norha.spring.BikeInsurance" autowire="byName">
+	<bean id="myInsurance" class="com.norha.spring.BikeInsurance" autowire="byType">
 	</bean>
 
-	<bean id="off1" name="currentOffer" class="com.norha.spring.Offers">
+	<bean id="off1" name="offe1" class="com.norha.spring.Offers">
 		<property name="offer" value="_offer__Value_From__Bean"></property>
 	</bean>
 
-	<bean id="cond1" name="currentCondition" class="com.norha.spring.Conditions">
-		<property name="condition" value="_condition__Value_From__Bean"></property>
+	<bean id="cond1" name="condi1" class="com.norha.spring.Conditions">
+		<property name="Condition" value="_condition__Value_From__Bean"></property>
 	</bean>
-
+	
 </beans> 
