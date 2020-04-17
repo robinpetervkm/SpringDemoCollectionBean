@@ -9,7 +9,7 @@ public class BikeInsurance implements Insurance {
 		return members;
 	}
 
-	public void setMembers(Map<String, String> members) {
+	public void setWembers(Map<String, String> members) {
 		this.members = members;
 	}
 
