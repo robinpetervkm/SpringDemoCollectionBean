@@ -19,11 +19,6 @@ public class CarInsurance implements Insurance {
 		return "Your Car is Insured";
 	}
 
-	@Override
-	public Map<String, String> getMembers() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	
 

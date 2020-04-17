@@ -1,16 +1,11 @@
 package com.norha.spring;
 
-import java.util.Map;
 
 public class BikeInsurance implements Insurance {
-	private Map<String,String> members;
-	
-	public Map<String, String> getMembers() {
-		return members;
-	}
-
-	public void setWembers(Map<String, String> members) {
-		this.members = members;
+	private Offers offers;
+	public BikeInsurance(Offers o) {
+		this.offers=o;
+		System.out.println(this.offers.getOffer());
 	}
 
 	@Override
@@ -18,9 +13,5 @@ public class BikeInsurance implements Insurance {
 		return "Your Bike is Insured";
 	}
 
-	@Override
-	public String toString() {
-		return "BikeInsurance [members=" + members + "]";
-	}
-
+	
 }
