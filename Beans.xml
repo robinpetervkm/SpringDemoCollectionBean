@@ -5,11 +5,12 @@
 
 	<bean id="myInsurance" class="com.norha.spring.BikeInsurance">
 		<property name="wembers">
-			<map>
-				<entry key="Father" value="John"></entry>
-				<entry key="Brother" value="Jose"></entry>
-				<entry key="Holder" value="Joseph"></entry>
-			</map>
+			<props>
+				<prop key="Father">John</prop>
+				<prop key="Brother">Jose</prop>
+				<prop key="Sister">Jain</prop>
+				<prop key="Holder">Joseph</prop>
+			</props>
 		</property>
 	</bean>
 
