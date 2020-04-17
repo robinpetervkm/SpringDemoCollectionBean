@@ -3,9 +3,6 @@ package com.norha.spring;
 
 public class BikeInsurance implements Insurance {
 	
-	public BikeInsurance() {
-	}
-	
 	public BikeInsurance(Offers o) {
 		System.out.println(o.getOffer());
 	}
